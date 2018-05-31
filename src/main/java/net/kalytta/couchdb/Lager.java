@@ -59,4 +59,20 @@ public class Lager {
     public void setArtikelList(List<Artikel> artikelList) {
         this.artikelList = artikelList;
     }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getRevision() {
+        return revision;
+    }
+
+    public void setRevision(String revision) {
+        this.revision = revision;
+    }
 }

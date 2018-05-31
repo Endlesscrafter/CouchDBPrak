@@ -22,15 +22,23 @@ public class ArtikelCSV {
 
         pw.println("LNR,LORT,LPLZ,ANZART,Artikelnummer,Artikelbezeichnung,Mengeneinheit,preis,Steuersatz,Erfassungdatum");
 
-        ListIterator<Lager> iterator = (ListIterator<Lager>) lagerList.iterator();
+        ListIterator<Lager> iterator = lagerList.listIterator();
 
         while (iterator.hasNext()) {
 
             Lager lager = iterator.next();
-            int lgnr = lager.getLNR();
+            int lnr = lager.getLNR();
             String lort = lager.getLORT();
             int lplz = lager.getLPLZ();
             int anzart = lager.getArtikelList().size();
+            ListIterator<Artikel> ArtikelIterator = lager.getArtikelList().listIterator();
+            while (ArtikelIterator.hasNext()) {
+
+                Artikel artikel = ArtikelIterator.next();
+
+                pw.println(lnr + "," + lort + "," + lplz + "," + anzart + "," + artikel.getArtikelnummer() + "," + artikel.getArtikelbezeichnung() + "," + artikel.getMengeneinheit() + "," + artikel.getPreis().doubleValue() + "," + artikel.getSteuersatz() + "," + artikel.getErfassungdatum());
+
+            }
 
         }
 

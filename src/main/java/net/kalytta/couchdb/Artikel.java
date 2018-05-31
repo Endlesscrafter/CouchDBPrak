@@ -6,14 +6,18 @@ import java.util.Date;
 
 public class Artikel {
 
+    //CouchDB Attributes
+    String id;
+    String revision;
+
     int Artikelnummer;
     String Artikelbezeichnung;
     String Mengeneinheit;
     BigDecimal preis;
     int Steuersatz;
-    Calendar Erfassungdatum;
+    Date Erfassungdatum;
 
-    public Artikel(int artikelnummer, String artikelbezeichnung, String mengeneinheit, BigDecimal preis, int steuersatz, Calendar erfassungdatum) {
+    public Artikel(int artikelnummer, String artikelbezeichnung, String mengeneinheit, BigDecimal preis, int steuersatz, Date erfassungdatum) {
         Artikelnummer = artikelnummer;
         Artikelbezeichnung = artikelbezeichnung;
         Mengeneinheit = mengeneinheit;
@@ -62,11 +66,27 @@ public class Artikel {
         Steuersatz = steuersatz;
     }
 
-    public Calendar getErfassungdatum() {
+    public Date getErfassungdatum() {
         return Erfassungdatum;
     }
 
-    public void setErfassungdatum(Calendar erfassungdatum) {
+    public void setErfassungdatum(Date erfassungdatum) {
         Erfassungdatum = erfassungdatum;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getRevision() {
+        return revision;
+    }
+
+    public void setRevision(String revision) {
+        this.revision = revision;
     }
 }
