@@ -27,7 +27,10 @@ public class ArtikelCSV {
         while (iterator.hasNext()) {
 
             Lager lager = iterator.next();
-
+            int lgnr = lager.getLNR();
+            String lort = lager.getLORT();
+            int lplz = lager.getLPLZ();
+            int anzart = lager.getArtikelList().size();
 
         }
 
