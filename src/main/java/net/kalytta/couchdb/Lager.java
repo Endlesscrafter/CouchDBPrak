@@ -4,6 +4,10 @@ import java.util.List;
 
 public class Lager {
 
+    //CouchDB Attriubtes
+    String id;
+    String revision;
+
     //Lagernummer
     int LNR;
     //Lagerort
