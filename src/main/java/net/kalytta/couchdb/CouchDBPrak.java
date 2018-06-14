@@ -49,10 +49,10 @@ public class CouchDBPrak {
             e.printStackTrace();
         }
 
-        couchLager13.insertArtikel(new Artikel(1, "Toller Artikel", "kg", new BigDecimal(0.4d), 7, Date.from(Instant.now())));
-        couchLager13.insertArtikel(new Artikel(2, "Nicht so toller Artikel", "l", new BigDecimal(11.4d), 19, Date.from(Instant.now())));
-        couchLager13.insertArtikel(new Artikel(3, "Mittelguter Artikel", "g", new BigDecimal(99.4d), 19, Date.from(Instant.now())));
-        couchLager13.insertArtikel(new Artikel(4, "Reduzierter Artikel", "m", new BigDecimal(50.90d), 7, Date.from(Instant.now())));
+        //couchLager13.insertArtikel(new Artikel(1, "Toller Artikel", "kg", new BigDecimal(0.4d), 7, Date.from(Instant.now())));
+        //couchLager13.insertArtikel(new Artikel(2, "Nicht so toller Artikel", "l", new BigDecimal(11.4d), 19, Date.from(Instant.now())));
+        //couchLager13.insertArtikel(new Artikel(3, "Mittelguter Artikel", "g", new BigDecimal(99.4d), 19, Date.from(Instant.now())));
+        //couchLager13.insertArtikel(new Artikel(4, "Reduzierter Artikel", "m", new BigDecimal(50.90d), 7, Date.from(Instant.now())));
 
 
     }

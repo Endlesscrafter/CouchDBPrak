@@ -7,7 +7,7 @@ import java.util.Date;
 public class Artikel {
 
     //CouchDB Attributes
-    String id;
+    String _id;
     String revision;
 
     int Artikelnummer;
@@ -75,11 +75,11 @@ public class Artikel {
     }
 
     public String getId() {
-        return id;
+        return _id;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setId(String _id) {
+        this._id = _id;
     }
 
     public String getRevision() {
