@@ -1,11 +1,13 @@
 package net.kalytta.couchdb;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.util.List;
 
 public class Lager {
 
     //CouchDB Attributes
-    String id;
+    String _id;
     String revision;
 
     //Lagernummer
@@ -60,18 +62,22 @@ public class Lager {
         this.artikelList = artikelList;
     }
 
-    public String getId() {
-        return id;
+    @JsonProperty("_id")
+    public String get_id() {
+        return _id;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    @JsonProperty("_id")
+    public void set_id(String _id) {
+        this._id = _id;
     }
 
+    @JsonProperty("_rev")
     public String getRevision() {
         return revision;
     }
 
+    @JsonProperty("_rev")
     public void setRevision(String revision) {
         this.revision = revision;
     }

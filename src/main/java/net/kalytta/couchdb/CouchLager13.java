@@ -40,7 +40,6 @@ public class CouchLager13 {
 
     public void readAllEntities() {
 
-        connector.getAllDocIds();
 
     }
 

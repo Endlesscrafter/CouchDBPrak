@@ -1,5 +1,7 @@
 package net.kalytta.couchdb;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.math.BigDecimal;
 import java.util.Calendar;
 import java.util.Date;
@@ -74,18 +76,22 @@ public class Artikel {
         Erfassungdatum = erfassungdatum;
     }
 
+    @JsonProperty("_id")
     public String getId() {
         return _id;
     }
 
+    @JsonProperty("_id")
     public void setId(String _id) {
         this._id = _id;
     }
 
+    @JsonProperty("_rev")
     public String getRevision() {
         return revision;
     }
 
+    @JsonProperty("_rev")
     public void setRevision(String revision) {
         this.revision = revision;
     }
