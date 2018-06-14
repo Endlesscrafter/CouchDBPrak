@@ -10,6 +10,7 @@ import java.time.Instant;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.LinkedList;
+import java.util.List;
 
 public class CouchDBPrak {
 
@@ -54,6 +55,11 @@ public class CouchDBPrak {
         //couchLager13.insertArtikel(new Artikel(3, "Mittelguter Artikel", "g", new BigDecimal(99.4d), 19, Date.from(Instant.now())));
         //couchLager13.insertArtikel(new Artikel(4, "Reduzierter Artikel", "m", new BigDecimal(50.90d), 7, Date.from(Instant.now())));
 
+        List<Artikel> artikelList1 = couchLager13.readAllEntities();
+
+        for (Artikel artikel : artikelList1) {
+            System.out.println(artikel.toString());
+        }
 
     }
 }

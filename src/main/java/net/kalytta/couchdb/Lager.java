@@ -30,6 +30,9 @@ public class Lager {
 
     }
 
+    public Lager() {
+    }
+
     public int getLNR() {
         return LNR;
     }

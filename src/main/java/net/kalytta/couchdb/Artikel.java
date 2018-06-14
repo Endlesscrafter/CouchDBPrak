@@ -19,6 +19,15 @@ public class Artikel {
     int Steuersatz;
     Date Erfassungdatum;
 
+    public Artikel() {
+
+    }
+
+    @Override
+    public String toString() {
+        return "ARTIKEL: ID:" + _id + " REV:" + revision + "\tNR=" + Artikelnummer + " BEZ=" + Artikelbezeichnung + " Mng=" + Mengeneinheit + " Preis=" + preis + " Str=" + Steuersatz + " Edat=" + Erfassungdatum;
+    }
+
     public Artikel(int artikelnummer, String artikelbezeichnung, String mengeneinheit, BigDecimal preis, int steuersatz, Date erfassungdatum) {
         Artikelnummer = artikelnummer;
         Artikelbezeichnung = artikelbezeichnung;

@@ -9,6 +9,7 @@ import org.ektorp.impl.StdCouchDbConnector;
 import org.ektorp.impl.StdCouchDbInstance;
 
 import java.net.MalformedURLException;
+import java.util.List;
 
 public class CouchLager13 {
 
@@ -38,8 +39,12 @@ public class CouchLager13 {
 
     }
 
-    public void readAllEntities() {
+    public List<Artikel> readAllEntities() {
 
+        ViewQuery q = new ViewQuery().allDocs().includeDocs(true);
+        List<Artikel> artikelLinkedList = connector.queryView(q, Artikel.class);
+
+        return artikelLinkedList;
 
     }
 
