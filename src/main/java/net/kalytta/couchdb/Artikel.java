@@ -25,7 +25,7 @@ public class Artikel {
 
     @Override
     public String toString() {
-        return "ARTIKEL: ID:" + _id + " REV:" + revision + "\tNR=" + Artikelnummer + " BEZ=" + Artikelbezeichnung + " Mng=" + Mengeneinheit + " Preis=" + preis + " Str=" + Steuersatz + " Edat=" + Erfassungdatum;
+        return "ARTIKEL: ID:" + _id + " REV:" + revision + "\tNR=" + Artikelnummer + " BEZ=" + Artikelbezeichnung + " Mng=" + Mengeneinheit + " Preis=" + preis + " Str=" + Steuersatz + " Edat=" + Erfassungdatum + "\n";
     }
 
     public Artikel(int artikelnummer, String artikelbezeichnung, String mengeneinheit, BigDecimal preis, int steuersatz, Date erfassungdatum) {

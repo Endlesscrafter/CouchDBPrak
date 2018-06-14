@@ -84,4 +84,16 @@ public class Lager {
     public void setRevision(String revision) {
         this.revision = revision;
     }
+
+    @Override
+    public String toString() {
+        return "Lager{" +
+                "_id='" + _id + '\'' +
+                ", revision='" + revision + '\'' +
+                ", LNR=" + LNR +
+                ", LORT='" + LORT + '\'' +
+                ", LPLZ=" + LPLZ +
+                ", artikelList=\n" + artikelList.toString() +
+                '}';
+    }
 }
